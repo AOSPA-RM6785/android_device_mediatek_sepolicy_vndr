@@ -2,63 +2,16 @@
 # Common SEPolicy Rule
 # ==============================================
 
-##########################
-# proc files
-#
-genfscon proc /blocktag/blockio              u:object_r:procfs_blockio:s0
-genfscon proc /blocktag/eara_io              u:object_r:proc_earaio:s0
-genfscon proc /driver/thermal                u:object_r:proc_thermal:s0
-genfscon proc /thermlmt                      u:object_r:proc_thermal:s0
-genfscon proc /fps_tm                        u:object_r:proc_thermal:s0
-genfscon proc /wmt_tm                        u:object_r:proc_thermal:s0
-genfscon proc /mobile_tm                     u:object_r:proc_thermal:s0
-genfscon proc /bcctlmt                       u:object_r:proc_thermal:s0
-genfscon proc /battery_status                u:object_r:proc_thermal:s0
-genfscon proc /mtkcooler                     u:object_r:proc_mtkcooler:s0
-genfscon proc /mtktz                         u:object_r:proc_mtktz:s0
-genfscon proc /lk_env                        u:object_r:proc_lk_env:s0
-genfscon proc /driver/storage_logger         u:object_r:proc_slogger:s0
-genfscon proc /driver/icusb                  u:object_r:proc_icusb:s0
-genfscon proc /mrdump_rst                    u:object_r:proc_mrdump_rst:s0
-genfscon proc /mtd                           u:object_r:proc_mtd:s0
-genfscon proc /ged                           u:object_r:proc_ged:s0
-genfscon proc /mtk_jpeg                      u:object_r:proc_mtk_jpeg:s0
-genfscon proc /perfmgr                       u:object_r:proc_perfmgr:s0
-genfscon proc /driver/wmt_dbg                u:object_r:proc_wmtdbg:s0
-genfscon proc /zraminfo                      u:object_r:proc_zraminfo:s0
-genfscon proc /gpulog                        u:object_r:proc_gpulog:s0
-genfscon proc /gpufreqv2                     u:object_r:proc_gpufreqv2:s0
-genfscon proc /sched_debug                   u:object_r:proc_sched_debug:s0
-genfscon proc /chip                          u:object_r:proc_chip:s0
-genfscon proc /atf_log                       u:object_r:proc_atf_log:s0
-genfscon proc /gz_log                        u:object_r:proc_gz_log:s0
-genfscon proc /last_kmsg                     u:object_r:proc_last_kmsg:s0
-genfscon proc /bootprof                      u:object_r:proc_bootprof:s0
-genfscon proc /mtprintk                      u:object_r:proc_mtprintk:s0
-genfscon proc /pl_lk                         u:object_r:proc_pl_lk:s0
-genfscon proc /msdc_debug                    u:object_r:proc_msdc_debug:s0
-genfscon proc /ufs_debug                     u:object_r:proc_ufs_debug:s0
-genfscon proc /pidmap                        u:object_r:proc_pidmap:s0
-genfscon proc /mtk_memcfg/slabtrace          u:object_r:proc_slabtrace:s0
-genfscon proc /mtk_cmdq_debug/status         u:object_r:proc_cmdq_debug:s0
-genfscon proc /mtk_cmdq_debug/record         u:object_r:proc_cmdq_debug:s0
-genfscon proc /cpuhvfs/dbg_repo              u:object_r:proc_dbg_repo:s0
-genfscon proc /sys/kernel/panic_on_rcu_stall u:object_r:proc_panic_on_rcu_stall:s0
+##############
+
 
 # Purpose dump not exit file
-genfscon proc /isp_p2/isp_p2_dump     u:object_r:proc_isp_p2_dump:s0
-genfscon proc /isp_p2/isp_p2_kedump   u:object_r:proc_isp_p2_kedump:s0
-genfscon proc /mali/memory_usage      u:object_r:proc_memory_usage:s0
-genfscon proc /mtk_mali/gpu_memory    u:object_r:proc_gpu_memory:s0
-genfscon proc /mtk_es_reg_dump        u:object_r:proc_mtk_es_reg_dump:s0
+
 
 # Date : 2018/11/01
-# Purpose : mtk EM c2k bypass read usb file
-genfscon proc /isp_p2 u:object_r:proc_isp_p2:s0
-
+# 
 # Date : WK19.27
 # Purpose: Android Migration for SVP
-genfscon proc /m4u u:object_r:proc_m4u:s0
 
 genfscon proc /driver/wmt_aee u:object_r:proc_wmt_aee:s0
 
